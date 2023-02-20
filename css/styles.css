@@ -1,0 +1,260 @@
+/* BASE */
+section {
+    height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: rgb(241, 214, 105);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  font-family: 'Kalam', cursive;
+  max-height: 100px;
+  position: sticky;
+}
+
+ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin-inline-end: 10px;
+  font-size: 1.2rem;
+}
+
+.logo {
+  height:100px;
+}
+
+.logo-container{
+  margin-inline-start: 100px;
+}
+
+li {
+  padding: 5px;
+}
+
+li:not(:last-child) {
+  border-right: 1px solid rgb(128, 128, 128, 0.5);
+  padding-right: 10px;
+}
+a:hover{
+  color: rgb(7, 162, 246);
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+a {
+  text-decoration: none;
+  color: white;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+  body {
+    background-color: rgb(87, 184, 237);
+    margin: 0;
+  }
+
+/* ADDRESS BOOK */
+
+.contact-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: calc(100vw - 10px);
+  margin-block-start: 40px;
+}
+
+.contact-card {
+  border: 1px solid black;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+  background-color: #0084ff;
+  color: rgb(236, 232, 210);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-height: 250px;
+  font-family: 'Kalam', cursive;
+}
+
+section .address-book {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.cntct-img {
+    height: 30%;
+  }
+
+
+
+/* YES/NO */
+
+.question-container {
+    display: flex;
+    flex-direction: column;
+    margin-block-start: 40px;
+}
+
+.yes-no {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Kalam', cursive;
+}
+.result-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-block-start: 25px;
+}
+
+.ask {
+  font-size: 3rem;
+}
+
+.question-input{
+  border-radius: 20px;
+  padding: 15px;
+}
+
+.res-img {
+  max-height: 200px;
+  position: relative;
+  border-radius: 20px;
+}
+.res-ans {
+  position: absolute;
+  color: white;
+  top: 0;
+  left: 25%;
+}
+
+.joke {
+  background-color: rgba(127, 128, 129, 0.3);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.dog-img {
+  max-height: 200px;
+  border-radius: 20px;
+}
+/* MOVIES */
+
+.movies {
+justify-content: center;
+font-family: 'Dosis', sans-serif;
+}
+
+.genres-container {
+  margin-block-start: 20px;
+  display:flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: center;
+  gap: 10px;
+}
+
+.genre-name {
+  background-color: purple;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+  max-height: 100px;
+  max-width: 100px;
+  padding: 20px;
+  color: rgb(227, 175, 175);
+  font-weight: bold;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+
+.movies-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0, 400px));
+  max-width: 100%;
+ margin-block-start: 40px;
+ justify-content: center;
+ gap: 75px;
+}
+
+
+.movie-data {
+  display:flex;
+  min-width: 400px;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  background-color: rgba(74, 14, 85, 0.5);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+  color: rgb(35, 34, 34);
+}
+
+.movie-data:hover {
+  transform: scale(1.1);
+}
+
+.movie-img {
+  max-height: 250px;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+p{
+  color: rgb(224, 221, 221);
+  line-height: 1.5em;
+}
+
+/* POKEMON */
+
+.pokemon {
+  justify-content: center;
+  font-family: 'Press Start 2P', cursive;
+
+}
+
+.pokemon-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0, 250px));
+  max-width: 100%;
+  margin-block-start: 40px;
+  justify-content: center;
+  gap: 20px;
+
+}
+
+.pokemon-card {
+border: 1px solid black;
+box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+padding: 40px;
+height: 300px;
+display:flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+background-image: url(https://wallpaperaccess.com/full/5818321.jpg);
+background-size: cover;
+border-radius: 20px;
+color: rgb(2, 74, 2)
+}
+
+.pokemon-card:hover{
+  transform: scale(1.1);
+}
+
+.pokemon-weight {
+  font-size: 0.5rem;
+  color:rgb(81, 76, 76)
+}
+
+.pokemon-img {
+  margin-block-end: 25px;
+}

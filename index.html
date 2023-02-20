@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" href="css/styles.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+<title>Document</title>
+  </head>
+  <body onload="onInit()">
+    <header>
+      <div class="logo-container">
+      <img class="logo" alt="" src="imgs/logo.png"/>
+      <img class="logo logo2" alt="" src="imgs/logo2.png"/>
+    </div>
+        <nav>
+          <ul>
+            <li><a href="#" data-target=".address-book">Address Book</a></li>
+            <li><a href="#" data-target=".yes-no">Yes/No</a></li>
+            <li><a href="#" data-target=".movies">Movies</a></li>
+            <li><a href="#" data-target=".pokemon">Pokemon</a></li>
+          </ul>
+        </nav>
+      </header>
+
+     <!-- Address Book section -->
+    <section class="address-book">
+        <div class="contact-list"></div>
+      </section>
+      
+   <!-- Yes/No section -->
+   <section class="yes-no">
+    <div class="question-container">
+      <h1 class="ask">Ask Anything!</h1>
+      <input type="text" class="question-input" placeholder="Enter your question" oninput="onHandleQuestion()">
+    </div>
+    <div class="result-display">
+      <div class="image-container">
+        <img alt="" class="res-img"/>
+        <h2 class="res-ans"></h2>
+        <div class="joke"></div>
+        <img alt="" class="dog-img" src=""/>
+      </div>
+    </div>    
+
+</section>
+
+
+<!--  Movies section -->
+    <section class="movies">
+      <div class="genres-container">
+        
+      </div>
+      <div class="movies-container">
+
+      </div>
+    </section>
+
+    <!-- Pokemon section -->
+    <section class="pokemon">
+      <div class="pokemon-container">
+
+      </div>
+    </section>
+
+
+
+    <!-- SERVICES -->
+    <script src="js/lib/jquery.js"></script>
+    <script src="js/services/util-service.js"></script>
+    <script src="js/services/storage-service.js"></script>
+    <script src="js/services/address-book-service.js"></script>
+    <script src="js/services/yes-no-service.js"></script>
+    <script src="js/services/movies-service.js"></script>
+    <script src="js/services/pokemon-service.js"></script>
+
+    <!-- CONTROLLERS -->
+    <script src="js/main.js"></script>
+    <script src="js/controllers/address-book-controller.js"></script>
+    <script src="js/controllers/yes-no-controller.js"></script>
+    <script src="js/controllers/movies-controller.js"></script>
+    <script src="js/controllers/pokemon-controller.js"></script>
+  </body>
+</html>
