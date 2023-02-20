@@ -10,7 +10,7 @@ function getContacts(cb) {
   }
   xhr.open(
     'GET',
-    'http://filltext.com/?rows=20&fname={firstName}&lname={lastName}'
+    'https://filltext.com/?rows=20&fname={firstName}&lname={lastName}'
   )
   xhr.send()
 }
